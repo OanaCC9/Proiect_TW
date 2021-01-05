@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Of Books</title>
+    <link rel="stylesheet" href="{% static 'css/style-carte.css' %}">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class = "card-wrapper">
+        <div class="card">
+
+            <div class="product-imgs">
+                <img src="../media/media/dracula.jpeg">
+            </div>
+
+            <div class="product-content">
+                <h2 class="product-title">Dracula</h2>
+                <h1 class="author">Bram Stoker</h1>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.0(50)</span>
+                </div>
+
+                <div class="product-price">
+                    <p class="new-price">Price <span>$25</span></p>
+                </div>
+
+                <div class="product-details">
+                    <h2>Book description </h2>
+                    <p>
+                        A rich selection of background and source materials is provided in three areas: 
+                        Contexts includes probable inspirations for Dracula in the earlier works of James 
+                        Malcolm Rymer and Emily Gerard. 
+                    </p>
+                    <p>
+                        Also included are a discussion of Stoker's working notes for the novel and 
+                        "Dracula's Guest," the original opening chapter to Dracula. Reviews and Reactions 
+                        reprints five early reviews of the novel. "Dramatic and Film Variations" focuses on 
+                        theater and film adaptations of Dracula, two indications of the novel's unwavering 
+                        appeal. David J. Skal, Gregory A. Waller, and Nina Auerbach offer their varied 
+                        perspectives. Checklists of both dramatic and film adaptations are included.
+                    </p>
+                    <ul>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Horror</span></li>
+                        <li>Shipping Area: <span>Europe</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+                </div>
+
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <button type="button" class="btn">
+                        Add to Cart <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

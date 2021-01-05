@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Books</title>
+    <link rel="stylesheet" href = "{% static 'css/styles-login.css' %}">
+</head>
+<body>
+    <form class="box" method="POST">
+        {% csrf_token %}
+        {% for message in messages %}
+            <div class = "message">{{form.errors}}</div>
+        {% endfor %}
+        <h1>Sign up</h1>
+        {{form.username}}
+        {{form.email}}
+        <!-- <input type="text" name="mail" placeholder="E-mail"> -->
+        {{form.password1}}
+        <!-- <input type="password" name="pwd" placeholder="Password"> -->
+        {{form.password2}}
+        <!-- <input type="password" name="pwd-repeat" placeholder="Confirm Password"> -->
+        <input type="submit" name="signup-submit" value="Sign Up">
+    </form>
+
+    <script src = "{% static 'js/register.js' %}"></script>
+
+</body>
+</html>
+
+<!-- <form method = "POST" action = >
+    {% csrf_token %}
+
+    {% for field in form %}
+        {{ field }}
+    {% endfor %}
+
+    <input type = "submit" name = "create user">
+</form> -->

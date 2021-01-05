@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Of Books</title>
+    <link rel="stylesheet" href="{% static 'css/style-carte.css' %}">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class = "card-wrapper">
+        <div class="card">
+
+            <div class="product-imgs">
+                <img src="../media/media/narnia.jpg">
+            </div>
+
+            <div class="product-content">
+                <h2 class="product-title">The Lion, the Witch and the Wardrobe</h2>
+                <h1 class="author">C.S. Lewis</h1>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.22</span>
+                </div>
+
+                <div class="product-price">
+                    <p class="new-price">Price <span>$25</span></p>
+                </div>
+
+                <div class="product-details">
+                    <h2>Book description </h2>
+                    <p>
+                        Narnia… the land beyond the wardrobe door, a secret place frozen in eternal winter, 
+                        a magical country waiting to be set free.
+                    </p>
+                    <p>
+                        Lucy is the first to find the secret of the wardrobe in the professor's 
+                        mysterious old house. At first her brothers and sister don't believe her 
+                        when she tells of her visit to the land of Narnia. But soon Edmund, then 
+                        Peter and Susan step through the wardrobe themselves. In Narnia they find a 
+                        country buried under the evil enchantment of the White Witch. When they meet 
+                        the Lion Aslan, they realize they've been called to a great adventure and bravely 
+                        join the battle to free Narnia from the Witch's sinister spell.
+                    </p>
+                    <ul>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Children</span></li>
+                        <li>Shipping Area: <span>Europe</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+                </div>
+
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <button type="button" class="btn">
+                        Add to Cart <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

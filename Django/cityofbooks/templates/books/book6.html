@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Of Books</title>
+    <link rel="stylesheet" href="{% static 'css/style-carte.css' %}">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class = "card-wrapper">
+        <div class="card">
+
+            <div class="product-imgs">
+                <img src="../media/media/jurnaluluneipusti.jpeg">
+            </div>
+
+            <div class="product-content">
+                <h2 class="product-title">Diary of a Wimpy Kid</h2>
+                <h1 class="author">Jeff Kinney </h1>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>3.99</span>
+                </div>
+
+                <div class="product-price">
+                    <p class="new-price">Price <span>$25</span></p>
+                </div>
+
+                <div class="product-details">
+                    <h2>Book description </h2>
+                    <p>
+                        Greg Heffley finds himself thrust into a new year and a new school where undersize 
+                        weaklings share the corridors with kids who are taller, meaner and already shaving.
+                    </p>
+                    <p>
+                        Desperate to prove his new found maturity, which only going up a grade can bring, 
+                        Greg is happy to have his not-quite-so-cool sidekick, Rowley, along for the ride. 
+                        But when Rowley's star starts to rise, Greg tries to use his best friend's popularity 
+                        to his own advantage. Recorded in his diary with comic pictures and his very own words, 
+                        this test of Greg and Rowley's friendship unfolds with hilarious results. 
+                    </p>
+                    <ul>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Children</span></li>
+                        <li>Shipping Area: <span>Europe</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+                </div>
+
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <button type="button" class="btn">
+                        Add to Cart <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
